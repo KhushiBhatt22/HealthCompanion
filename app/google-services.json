@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "557163531605",
+    "project_id": "healthcare-companion-1904",
+    "storage_bucket": "healthcare-companion-1904.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557163531605:android:a21a193c5231be420f73dc",
+        "android_client_info": {
+          "package_name": "com.example.healthcarecompanion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPvzpVBJdsEibiXTwJvzngKCZ_p7Rz2cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

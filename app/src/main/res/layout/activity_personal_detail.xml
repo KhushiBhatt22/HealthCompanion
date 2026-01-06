@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/signup"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Up Your Health Profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:backgroundTint="@color/inputBackground"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintColor"
+
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edit_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"
+            android:padding="12dp"
+            android:backgroundTint="@color/inputBackground"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintColor"
+            android:drawableStart="@android:drawable/ic_menu_my_calendar"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Medical Condition"
+            android:inputType="text"
+            android:padding="12dp"
+            android:backgroundTint="@color/inputBackground"
+            android:textColor="@color/inputTextColor"
+            android:textColorHint="@color/hintColor"
+            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/buttonTextColor"
+            android:backgroundTint="@color/buttonColor"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="10dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tv_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textSecondary"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

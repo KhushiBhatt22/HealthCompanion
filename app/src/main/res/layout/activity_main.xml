@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/signup"
+    tools:context=".MainActivity">
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Healthcare Companion"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/textPrimary"
+        android:layout_gravity="start"
+        android:paddingBottom="16dp" />
+
+
+    <!-- Grid of Icons + Labels -->
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        android:paddingTop="8dp">
+
+        <!-- User Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/UserInfo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/userinfo"
+                android:contentDescription="@string/userdata"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/label_userinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_details"
+                android:textColor="@color/textPrimary"
+                android:textSize="14sp"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <!-- Track Data -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/trackdata"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/trackdata"
+                android:contentDescription="@string/trackdata"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/label_trackdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medicine_tracker"
+                android:textColor="@color/textPrimary"
+                android:textSize="14sp"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <!-- Set Reminder -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/setreminder"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/reminders"
+                android:contentDescription="@string/setreminder2"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/label_setreminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_alerts"
+                android:textColor="@color/textPrimary"
+                android:textSize="14sp"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <!-- Store Documents -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/storedoc"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/folder"
+                android:contentDescription="@string/storedoc"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/label_storedoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/store_documents"
+                android:textColor="@color/textPrimary"
+                android:textSize="14sp"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <!-- Calendar -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/calender"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/calendar"
+                android:contentDescription="@string/calender"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/label_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_calendar"
+                android:textColor="@color/textPrimary"
+                android:textSize="14sp"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <!-- Motivation -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/motivation"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/trophy"
+                android:contentDescription="@string/motivation"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/label_motivation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/motivation_text"
+                android:textColor="@color/textPrimary"
+                android:textSize="14sp"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>
